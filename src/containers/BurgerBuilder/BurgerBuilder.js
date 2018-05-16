@@ -32,7 +32,7 @@ class BurgerBuilder extends Component {
   };
 
   removeIngredientHabdler = type => {
-    let updatedCount;
+    let updatedCount = 0;
     if (this.state.ingredients[type] > 0) {
       updatedCount = this.state.ingredients[type] - 1;
     }
